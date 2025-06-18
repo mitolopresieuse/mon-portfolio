@@ -1,0 +1,131 @@
+:root {
+    --primary: #3498db;
+    --secondary: #2c3e50;
+    --accent: #e74c3c;
+    --light: #ecf0f1;
+    --dark: #2c3e50;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 2rem auto;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.sidebar {
+    width: 35%;
+    background: var(--secondary);
+    color: white;
+    padding: 2rem;
+}
+
+.main-content {
+    width: 65%;
+    background: white;
+    padding: 2rem;
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid var(--primary);
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.title {
+    color: var(--primary);
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--primary);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Styles spécifiques pour les sections */
+.contact ul {
+    list-style: none;
+}
+
+.contact li {
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.skill-item {
+    margin-bottom: 1rem;
+}
+
+.skill-bar {
+    height: 8px;
+    background: var(--dark);
+    border-radius: 4px;
+    margin-top: 0.3rem;
+}
+
+.skill-level {
+    height: 100%;
+    background: var(--primary);
+    border-radius: 4px;
+}
+
+.timeline-item, .education-item {
+    margin-bottom: 1.5rem;
+    padding-left: 1rem;
+    border-left: 2px solid var(--primary);
+}
+
+.date {
+    color: var(--primary);
+    font-weight: 600;
+    margin: 0.3rem 0;
+}
+
+ul {
+    padding-left: 1.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .sidebar, .main-content {
+        width: 100%;
+    }
+}
